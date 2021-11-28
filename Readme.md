@@ -23,12 +23,7 @@ RSK mines a block about [once every 30 seconds](https://www.rsk.co/faqs#scalabil
 npm install
 ```
 
-2. Compile the ExampleClient contract.
-```
-npx hardhat compile
-```
-
-3. Put your test wallet private key in [hardhat.config.js](/hardhat.config.js).
+2. Put your test wallet private key in [hardhat.config.js](/hardhat.config.js).
 ```javascript
   networks: {
 	  testnet: {
@@ -36,6 +31,11 @@ npx hardhat compile
 		  accounts: ["0xPUT YOUR TEST WALLET PRIVATE KEY HERE"]
 	  }
   }
+```
+
+3. Compile the ExampleClient contract.
+```
+npx hardhat compile
 ```
 
 4. Deploy the ExampleClient contract and create a requester on RSK Testnet. You only need to run this once.
